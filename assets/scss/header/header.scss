@@ -1,0 +1,163 @@
+header
+{
+    position: fixed;
+
+    display: flex;
+
+    width: 100%;
+    padding: 10px .5% 0 .5%;
+
+    flex-wrap: wrap;
+}
+
+
+.logo
+{
+    cursor: pointer;
+
+    color: #fff;
+
+
+    span
+    {
+        font-style: 1.7em;
+        line-height: 45px;
+
+        margin-left: 40px;
+    }
+}
+
+.about
+{
+    font-size: 1.5em;
+    line-height: 40px;
+
+    display: flex;
+
+    margin-bottom: 10px;
+
+    text-align: center;
+
+    flex-wrap: wrap;
+
+    a
+    {
+        font-weight: bold;
+
+        transition: 1s;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        color: #fff;
+        &::after
+        {
+            display: block;
+
+            width: 0;
+            height: 1px;
+
+            content: '';
+            transition: 400ms;
+
+            background: white;
+        }
+        &:hover::after
+        {
+            width: 100%;
+        }
+    }
+
+    a:hover
+    {
+        color: #b0b0b0;
+    }
+    a:not(:last-child)
+    {
+        margin-right: 7%;
+    }
+}
+
+.top
+{
+    font-style: 3em;
+
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #6e6e6ebe;
+    background-image: url(https://thumbs2.imgbox.com/f3/99/iKblUErm_t.jpg);
+    background-size: cover;
+
+    background-blend-mode: multiply;
+}
+
+.top-title
+{
+    padding-top: 10%;
+}
+
+.top-subtitle
+{
+    color: #fff;
+}
+
+.fixed
+{
+    z-index: 1000;
+
+    opacity: 85%;
+    background: white;
+}
+
+
+.fixed .logo
+{
+    color: #000;
+    text-shadow: 2px 0 9px rgba(0,0,0,.86);
+}
+
+.fixed .about a
+{
+    color: #343434;
+    text-shadow: 2px 0 9px rgba(0,0,0,.86);
+}
+.fixed .about a:hover
+{
+    color: black;
+    text-shadow: none;
+}
+
+
+
+.logotype
+{
+    font-size: 3rem;
+
+    transition: .5s;
+}
+
+.fixed .logotype
+{
+    transition: .5s;
+}
+
+.about
+{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+}
+
+
+
+.info-text
+{
+    margin-top: 15px;
+
+    text-align: center;
+}

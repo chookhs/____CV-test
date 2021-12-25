@@ -1,0 +1,46 @@
+footer
+{
+    margin-top: 5%;
+    padding: 20px 0;
+
+    background-color: #1b1b1b;
+
+    flex-shrink: 0;
+}
+
+.footer
+{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.phone-link,
+.email-link,
+.git-link
+{
+    font-size: 2em;
+
+    transition: 400ms;
+    text-decoration: none;
+
+    color: #fff;
+    &::after
+    {
+        display: block;
+
+        width: 0;
+        height: 1px;
+
+        content: '';
+        transition: 400ms;
+
+        background: white;
+    }
+    &:hover::after
+    {
+        width: 100%;
+    }
+}

@@ -1,0 +1,118 @@
+
+@media (min-width: 1001px)
+{
+    .top
+    {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 651px)
+{
+    .top
+    {
+        font-size: 2em;
+    }
+}
+
+
+@media (max-width: 800px)
+{
+    .item
+    {
+        margin: 20px 20px;
+    }
+}
+
+@media (min-width: 701px)
+{
+    .logo
+    {
+        font-size: 1.1em;
+
+        width: 30%;
+    }
+
+    .about
+    {
+        width: 67%;
+    }
+}
+
+@media (max-width: 700px)
+{
+    .logo
+    {
+        font-size: 1.5em;
+
+        width: 100%;
+        margin-top: 15px;
+    }
+    .about
+    {
+        float: left;
+
+        width: 100%;
+    }
+    .progress
+    {
+        margin-top: 5%;
+    }
+
+    .top-title
+    {
+        padding-top: 20%;
+    }
+}
+
+@media (max-width: 520px)
+{
+    .footer
+    {
+        flex-direction: column;
+
+        align-items: center;
+    }
+    .email,
+    .git,
+    .phone
+    {
+        padding: 20px;
+    }
+
+    .about a
+    {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 490px)
+{
+    .top-title
+    {
+        padding-top: 30%;
+    }
+
+    .logo
+    {
+        text-align: center;
+    }
+    .item
+    {
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (max-width: 380px)
+{
+    .about
+    {
+        flex-direction: row;
+
+        justify-content: center;
+    }
+    .top-title
+    {
+        visibility: hidden;
+    }
+}
